@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (c) Files Community. Licensed under the MIT License.  -->
 <Package
     xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -150,6 +150,7 @@
                             <uap:FileType>.jar</uap:FileType>
                             <uap:FileType>.mrpack</uap:FileType>
                             <uap:FileType>.gz</uap:FileType>
+                            <uap:FileType>.bz2</uap:FileType>
                         </uap:SupportedFileTypes>
                         <uap:Logo>assets\archives\ExtensionIcon.png</uap:Logo>
                     </uap:FileTypeAssociation>

@@ -127,7 +127,7 @@ namespace Files.Shared.Helpers
 		/// <returns><c>true</c> if the fileExtensionToCheck is a zip bundle file; otherwise, <c>false</c>.</returns>
 		public static bool IsZipFile(string? fileExtensionToCheck)
 		{
-			return HasExtension(fileExtensionToCheck, ".zip", ".msix", ".appx", ".msixbundle", ".appxbundle", ".7z", ".rar", ".tar", ".mcpack", ".mcworld", ".mrpack", ".jar", ".gz", ".lzh");
+			return HasExtension(fileExtensionToCheck, ".zip", ".msix", ".appx", ".msixbundle", ".appxbundle", ".7z", ".rar", ".tar", ".mcpack", ".mcworld", ".mrpack", ".jar", ".gz", ".lzh", ".bz2");
 		}
 
 		public static bool IsBrowsableZipFile(string? filePath, out string? ext)
@@ -140,7 +140,7 @@ namespace Files.Shared.Helpers
 			}
 
 			// Only extensions we want to browse
-			ext = new[] { ".zip", ".7z", ".rar", ".tar", ".gz", ".lzh", ".mrpack", ".jar" }
+			ext = new[] { ".zip", ".7z", ".rar", ".tar", ".gz", ".lzh", ".mrpack", ".jar", ".bz2" }
 				.FirstOrDefault(x => filePath.Contains(x, StringComparison.OrdinalIgnoreCase));
 
 			return ext is not null;
